@@ -8,7 +8,6 @@ import com.endlesnights.torchslabsmod.TorchSlabsMod;
 import com.endlesnights.torchslabsmod.blocks.vanilla.BlockWallTorchSlab;
 import com.endlesnights.torchslabsmod.config.Config;
 import com.endlesnights.torchslabsmod.config.TorchSlabConfig;
-import com.mojang.math.Vector3d;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FenceBlock;
@@ -32,6 +31,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.loading.FMLPaths;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.joml.Vector3d;
 
 @SuppressWarnings("deprecation")
 @EventBusSubscriber(modid=TorchSlabsMod.MODID)

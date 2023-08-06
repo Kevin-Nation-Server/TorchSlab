@@ -8,7 +8,6 @@ import com.endlesnights.torchslabsmod.TorchSlabsMod;
 import com.endlesnights.torchslabsmod.blocks.vanilla.BlockWallTorchSlab;
 import com.endlesnights.torchslabsmod.config.Config;
 import com.endlesnights.torchslabsmod.config.TorchSlabConfig;
-import com.mojang.math.Vector3d;
 
 import net.minecraft.world.level.block.AirBlock;
 import net.minecraft.world.level.block.Block;
@@ -26,13 +25,11 @@ import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
-import net.minecraft.world.level.block.StoneButtonBlock;
 import net.minecraft.world.level.block.TorchBlock;
 import net.minecraft.world.level.block.VineBlock;
 import net.minecraft.world.level.block.WallSignBlock;
 import net.minecraft.world.level.block.WallTorchBlock;
 import net.minecraft.world.level.block.WebBlock;
-import net.minecraft.world.level.block.WoodButtonBlock;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.resources.ResourceLocation;
@@ -46,6 +43,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.loading.FMLPaths;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.joml.Vector3d;
 
 @SuppressWarnings("deprecation")
 @EventBusSubscriber(modid=TorchSlabsMod.MODID)
@@ -178,8 +176,6 @@ public class PlaceHandlerTorchWall
 				|| state.getBlock() instanceof WebBlock
 				|| state.getBlock() instanceof VineBlock
 				|| state.getBlock() instanceof RedstoneWallTorchBlock
-				|| state.getBlock() instanceof StoneButtonBlock
-				|| state.getBlock() instanceof WoodButtonBlock
 				)
 			return true;
 		

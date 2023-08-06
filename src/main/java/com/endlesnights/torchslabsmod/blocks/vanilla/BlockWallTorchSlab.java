@@ -22,13 +22,11 @@ import net.minecraft.world.level.block.LadderBlock;
 import net.minecraft.world.level.block.RedstoneWallTorchBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
-import net.minecraft.world.level.block.StoneButtonBlock;
 import net.minecraft.world.level.block.TorchBlock;
 import net.minecraft.world.level.block.VineBlock;
 import net.minecraft.world.level.block.WallSignBlock;
 import net.minecraft.world.level.block.WallTorchBlock;
 import net.minecraft.world.level.block.WebBlock;
-import net.minecraft.world.level.block.WoodButtonBlock;
 
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -164,8 +162,6 @@ public class BlockWallTorchSlab extends WallTorchBlock
 				|| state.getBlock() instanceof WebBlock
 				|| state.getBlock() instanceof VineBlock
 				|| state.getBlock() instanceof RedstoneWallTorchBlock
-				|| state.getBlock() instanceof StoneButtonBlock
-				|| state.getBlock() instanceof WoodButtonBlock
 				)
 			return true;
 		
